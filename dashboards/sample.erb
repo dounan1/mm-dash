@@ -1,0 +1,32 @@
+<% content_for :title do %>Mix & Match Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Welcome Real Shanghai" data-text="Enjoy Mix&Match Night!" data-moreinfo="Tip: You can ask the bartender to help treat!"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="2">
+      <div data-id="treats" data-view="List" data-unordered="true" data-title="Match" data-moreinfo="Most recent treats "></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="views" data-view="Number" data-title="Chemistry" data-moreinfo="In Profile Views Per Minute" data-prefix="✨"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="gender" data-view="Meter" data-title="Mix (♀)" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="users" data-view="Graph" data-title="Mix&Matchers" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="revenue-treat" data-view="Number" data-title="Treats" data-moreinfo="Revenue from People Treating Each Other" data-prefix="$"></div>
+    </li>
+
+    <li data-row="3" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="revenue-self" data-view="Number" data-title="Self-Treats" data-moreinfo="Revenue from People Treating Themselves" data-prefix="$"></div>
+    </li>
+  </ul>
+</div>
