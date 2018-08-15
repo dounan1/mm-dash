@@ -15,12 +15,13 @@ SCHEDULER.every '10s' do
       giver = treat["user"]["username"]
       receiver = treat["receiver"]["username"]
       drink = treat["drink"]["name"]
+      price = treat["drink"]["price"] / 100
 
-      if status == "offered"
-        { label: "#{giver} ⇰ #{receiver}: #{drink}", value: status }
-      else
-        { label: "#{giver} ⇰ #{receiver}: #{drink}", value: status }
-      end
+      # if status == "offered"
+      #   { label: "#{giver} ⇰ #{receiver}: #{drink}", value: status }
+      # else
+        { label: "#{giver} ⇰ #{receiver}: #{drink}", value: "#{price}RMB" }
+      # end
 
     end
 
